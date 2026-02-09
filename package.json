@@ -1,0 +1,52 @@
+{
+  "name": "erandix_manager",
+  "version": "1.0.0",
+  "description": "Company Monitoring Software",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"No test specified\" && exit 0",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "erandix",
+    "desktop"
+  ],
+  "author": "Elite",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^36.2.1",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0"
+  },
+  "build": {
+    "appId": "com.erandix.manager",
+    "productName": "Erandix_Manager",
+    "files": [
+      "**/*",
+      "!node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!**/.*",
+      "!**/*.md",
+      "!**/test{,s}/**",
+      "!**/__tests__/**"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "icon": "public/icon.png",
+      "target": "nsis"
+    },
+    "mac": {
+      "icon": "public/icon.png",
+      "target": "dmg"
+    },
+    "linux": {
+      "icon": "public/icon.png",
+      "target": "AppImage"
+    },
+    "publish": null
+  }
+}
