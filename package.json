@@ -1,5 +1,5 @@
 {
-  "name": "erandix_manager",
+  "name": "erandix",
   "version": "1.0.0",
   "description": "Company Monitoring Software",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "erandix",
     "desktop"
   ],
-  "author": "Elite",
+  "author": "Erandix",
   "license": "ISC",
   "devDependencies": {
     "electron": "^36.2.1",
@@ -22,8 +22,8 @@
     "electron-store": "^8.1.0"
   },
   "build": {
-    "appId": "com.erandix.manager",
-    "productName": "Erandix_Manager",
+    "appId": "com.erandix.erandix",
+    "productName": "Erandix",
     "files": [
       "**/*",
       "!node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
